@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SCP DOWNLOADER</title>
+    <link rel="stylesheet" href="bulma.css">
+    <style>
+      a {
+        color: inherit;
+      }
+
+      ul.style-none {
+        margin: 0;
+        list-style: none;
+      }
+
+      input[type=checkbox] {
+        margin-right: .5em;
+      }
+
+      .hide {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hero is-info is-bold">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">SCP DOWNLOADER</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div id="js-connect" class="content">
+        <div class="panel is-info">
+          <header class="panel-heading is-bold">
+            SSH Connect
+          </header>
+          <div class="panel-content box">
+            <div class="field">
+              <label>
+                <div class="label">Host</div>
+                <div class="control">
+                  <input class="input" type="text" name="host" value="">
+                </div>
+              </label>
+            </div>
+
+            <div class="field">
+              <label>
+                <div class="label">Port</div>
+                <div class="control">
+                  <input class="input" type="text" name="port" value="22">
+                </div>
+              </label>
+            </div>
+
+            <div class="field">
+              <label>
+                <div class="label">UserName</div>
+                <div class="control">
+                  <input class="input" type="text" name="username" value="">
+                </div>
+              </label>
+            </div>
+
+            <div class="field">
+              <label>
+                <div class="label">Password</div>
+                <div class="control">
+                  <input class="input" type="text" name="password" value="">
+                </div>
+              </label>
+            </div>
+
+            <div class="field">
+              <label>
+                <div class="label">Private Key Path</div>
+                <div class="control">
+                  <input class="input" type="text" name="privateKeyPath" value="">
+                </div>
+              </label>
+            </div>
+
+            <div class="content">
+              <div class="has-text-right">
+                <button id="js-connectBtn" class="button is-info">Connect</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="js-fetch" class="content hide">
+        <div class="panel is-info">
+          <header class="panel-heading is-bold">
+            Fetch
+          </header>
+          <div class="panel-content box">
+            <div class="field">
+              <label>
+                <div class="label">Fetch Path</div>
+                <div class="control">
+                  <input class="input" type="text" name="path" value="/">
+                </div>
+              </label>
+            </div>
+
+            <div class="content">
+              <div class="has-text-right">
+                <button id="js-fetchBtn" class="button is-info">Fetch</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="js-list" class="content hide">
+        <div class="panel is-info">
+          <header class="panel-heading is-bold">
+            List
+          </header>
+          <div class="panel-content box">
+            <ul id="js-resultList" class="style-none"></ul>
+
+            <div class="field">
+              <label>
+                <div class="label">Download Path</div>
+                <div class="control">
+                  <input class="input" type="text" name="downloadPath" value="/">
+                </div>
+              </label>
+            </div>
+
+            <div class="content">
+              <div class="has-text-right">
+                <button id="js-downloadBtn" class="button is-info">Download</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

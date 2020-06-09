@@ -1,0 +1,29 @@
+{
+  "name": "scp-downloader",
+  "version": "1.0.0",
+  "main": "main.js",
+  "repository": "git@github.com:narikei/scp-downloader.git",
+  "author": "なりたけいすけ <narikei1030@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "ssh2": "^0.8.9"
+  },
+  "devDependencies": {
+    "electron": "^9.0.2",
+    "electron-builder": "^22.7.0",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2"
+  },
+  "build": {
+    "appId": "com.ozonicsky.cough-switch",
+    "productName": "scp-downloader",
+    "mac": {
+      "target": "dmg"
+    }
+  }
+}
