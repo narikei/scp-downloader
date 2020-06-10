@@ -6,7 +6,8 @@
   "author": "なりたけいすけ <narikei1030@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-builder"
   },
   "dependencies": {
     "lodash": "^4.17.15",
@@ -20,8 +21,9 @@
     "eslint-plugin-import": "^2.20.2"
   },
   "build": {
-    "appId": "com.ozonicsky.cough-switch",
+    "appId": "com.ozonicsky.scp-downloader",
     "productName": "scp-downloader",
+    "icon": "icons.iconset",
     "mac": {
       "target": "dmg"
     }
