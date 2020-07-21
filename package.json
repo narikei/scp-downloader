@@ -10,7 +10,7 @@
     "build": "electron-builder"
   },
   "dependencies": {
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "ssh2": "^0.8.9"
   },
   "devDependencies": {
